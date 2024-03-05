@@ -14,3 +14,13 @@ ON matricula.pessoa_id = pessoa.id;
 
 SELECT * FROM matricula;
 SELECT * FROM pessoa;
+
+-- parte 2
+-- Alias nas colunas
+SELECT
+matricula.id as "Código Associado",
+pessoa.nome as "Nome Associado",
+matricula.dt_associacao as "Data Associacao"
+FROM matricula
+INNER JOIN pessoa
+ON matricula.pessoa_id = pessoa.id;
